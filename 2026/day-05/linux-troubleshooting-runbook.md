@@ -74,6 +74,8 @@ Disk Usage
 
 ```df -h```
 
+Output:
+
 ```Filesystem      Size  Used Avail Use%```
 ```/dev/xvda1       20G   11G    8G  58%```
 
