@@ -5,7 +5,7 @@ Service: cron
 
 ## Environment 
 
-'''bash 
+'''
 uname -a
 Linux ip-172-31-1-10 5.15.0-91-generic #101-Ubuntu SMP x86_64 GNU/Linux
 
