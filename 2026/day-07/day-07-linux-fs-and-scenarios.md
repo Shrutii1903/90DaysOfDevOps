@@ -31,6 +31,7 @@ Subdirectories:
 
 ```/usr/lib → Libraries needed by binaries.```
 
+
 ```/etc → Configuration Files```
 
 Purpose: Contains system and application configuration files.
@@ -42,6 +43,7 @@ Examples:
 ```/etc/ssh/sshd_config → SSH server config```
 
 ```/etc/crontab → scheduled jobs```
+
 
 ```/home → User Home Directories```
 
@@ -69,6 +71,7 @@ Subdirectories:
 
 ```/var/tmp → temporary files preserved across reboots```
 
+
 ```/tmp → Temporary Files```
 
 Purpose: Temporary storage for files created by applications.
@@ -86,6 +89,7 @@ Examples:
 ```/dev/tty → terminal```
 
 ```/dev/usb → USB devices```
+
 
 ```/proc → Process Information```
 
