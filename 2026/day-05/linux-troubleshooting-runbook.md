@@ -98,7 +98,11 @@ Recent cron jobs executed successfully. No error messages in last 50 entries.
 
 ## System Log for Cron
 ```tail -n 50 /var/log/syslog | grep CRON```
-CRON[1456]: (root) CMD (backup.sh)
+
+Output:
+
+```CRON[1456]: (root) CMD (backup.sh)```
 
 **Observation:**
+
 Jobs are running at scheduled intervals. No failed or missed executions observed.
