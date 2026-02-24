@@ -32,7 +32,7 @@ Filesystem is writable. File operations succeed without permission or disk error
 
 ## Cron Spool Directory
 ### ls -ld /var/spool/cron
-drwxr-xr-x 2 root root 4096 Jan 20 08:00 /var/spool/cron
+```drwxr-xr-x 2 root root 4096 Jan 20 08:00 /var/spool/cron```
 
 **Observation:**
 Cron spool directory exists with correct ownership and permissions.
