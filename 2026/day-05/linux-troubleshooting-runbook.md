@@ -40,8 +40,8 @@ Cron spool directory exists with correct ownership and permissions.
 ## CPU & Memory
 ### ps -o pid,pcpu,pmem,comm -C cron
 
-  PID %CPU %MEM COMMAND
- 1023  0.0  0.1 cron
+ ``` PID %CPU %MEM COMMAND ```
+``` 1023  0.0  0.1 cron```
  
 **Observation: **
 cron is running and consuming negligible CPU and memory — normal behavior.
