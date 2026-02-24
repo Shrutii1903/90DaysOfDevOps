@@ -37,11 +37,11 @@ Purpose: Contains system and application configuration files.
 
 Examples:
 
-/etc/passwd → user accounts
+```/etc/passwd → user accounts```
 
-/etc/ssh/sshd_config → SSH server config
+```/etc/ssh/sshd_config → SSH server config```
 
-/etc/crontab → scheduled jobs
+```/etc/crontab → scheduled jobs```
 
 ```/home → User Home Directories```
 
@@ -63,11 +63,11 @@ Purpose: Stores files that change frequently during system operation.
 
 Subdirectories:
 
-/var/log → system and service logs
+```/var/log → system and service logs```
 
-/var/spool → mail, cron jobs, printing queues
+```/var/spool → mail, cron jobs, printing queues```
 
-/var/tmp → temporary files preserved across reboots
+```/var/tmp → temporary files preserved across reboots```
 
 ```/tmp → Temporary Files```
 
@@ -81,11 +81,11 @@ Purpose: Represents hardware devices as files.
 
 Examples:
 
-/dev/sda → first hard disk
+```/dev/sda → first hard disk```
 
-/dev/tty → terminal
+```/dev/tty → terminal```
 
-/dev/usb → USB devices
+```/dev/usb → USB devices```
 
 ```/proc → Process Information```
 
@@ -93,9 +93,9 @@ Purpose: Virtual filesystem showing real-time info about processes and kernel.
 
 Examples:
 
-/proc/cpuinfo → CPU details
+```/proc/cpuinfo → CPU details```
 
-/proc/meminfo → memory info
+```/proc/meminfo → memory info```
 
 Note: Not real files; the kernel generates this on the fly.
 
@@ -135,9 +135,9 @@ Purpose: Stores kernel and bootloader files needed to start the system.
 
 Examples:
 
-vmlinuz → Linux kernel
+```vmlinuz → Linux kernel```
 
-initrd.img → initial RAM disk
+```initrd.img → initial RAM disk```
 
-grub/ → bootloader files
+```grub/ → bootloader files```
 
