@@ -25,7 +25,7 @@ Create Throwaway Directory & File
 ### mkdir -p /tmp/runbook-demo
 ### cp /etc/hosts /tmp/runbook-demo/hosts-copy
 ### ls -l /tmp/runbook-demo
--rw-r--r-- 1 root root 234 Jan 24 10:11 hosts-copy
+```-rw-r--r-- 1 root root 234 Jan 24 10:11 hosts-copy```
 
 **Observation: **
 Filesystem is writable. File operations succeed without permission or disk errors.
