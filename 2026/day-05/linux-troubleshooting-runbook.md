@@ -5,13 +5,12 @@ Service: cron
 
 ## Environment 
 
-'''
-uname -a
+```uname -a```
 Linux ip-172-31-1-10 5.15.0-91-generic #101-Ubuntu SMP x86_64 GNU/Linux
 
 **Observation:** System is running a 64-bit Linux kernel (5.15). Kernel version is stable and not outdated.
 
-### lsb_release -a
+```lsb_release -a```
 
 Distributor ID: Ubuntu
 Description:    Ubuntu 22.04.3 LTS
