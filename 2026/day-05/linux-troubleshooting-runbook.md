@@ -77,7 +77,7 @@ Disk Usage
 Output:
 
 ```Filesystem      Size  Used Avail Use%```
-```/dev/xvda1       20G   11G    8G  58%```
+/dev/xvda1       20G   11G    8G  58%
 
 **Observation:** Root partition at 58% utilization — healthy, no immediate disk space risk.
 
