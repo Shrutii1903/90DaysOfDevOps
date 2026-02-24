@@ -63,8 +63,8 @@ Output:
 Output:
 
               total        used        free
-```Mem:           3.8G        1.2G        2.0G```
-```Swap:          2.0G          0B        2.0G```
+Mem:           3.8G        1.2G        2.0G
+Swap:          2.0G          0B        2.0G
 
 **Observation:** No memory pressure. Sufficient free RAM and swap unused.
 
@@ -77,7 +77,7 @@ Disk Usage
 Output:
 
 ```Filesystem      Size  Used Avail Use%```
-/dev/xvda1       20G   11G    8G  58%
+```/dev/xvda1       20G   11G    8G  58%```
 
 **Observation:** Root partition at 58% utilization — healthy, no immediate disk space risk.
 
