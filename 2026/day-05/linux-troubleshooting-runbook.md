@@ -34,27 +34,36 @@ Create Throwaway Directory & File
 Filesystem is writable. File operations succeed without permission or disk errors.
 
 ## Cron Spool Directory
+
 ```ls -ld /var/spool/cron```
+
+Output:
+
 ```drwxr-xr-x 2 root root 4096 Jan 20 08:00 /var/spool/cron```
 
 **Observation:**
 Cron spool directory exists with correct ownership and permissions.
 
 ## CPU & Memory
+
 ```ps -o pid,pcpu,pmem,comm -C cron```
+Output:
 
  ``` PID %CPU %MEM COMMAND ```
 ``` 1023  0.0  0.1 cron```
  
 **Observation: **
+
 cron is running and consuming negligible CPU and memory — normal behavior.
 
 ## Memory Status
 ``` free -h```
 
+Output:
+
               total        used        free
-Mem:           3.8G        1.2G        2.0G
-Swap:          2.0G          0B        2.0G
+```Mem:           3.8G        1.2G        2.0G```
+```Swap:          2.0G          0B        2.0G```
 
 **Observation:**
 No memory pressure. Sufficient free RAM and swap unused.
@@ -69,31 +78,39 @@ Disk Usage
 ```/dev/xvda1       20G   11G    8G  58%```
 
 **Observation:**
+
 Root partition at 58% utilization — healthy, no immediate disk space risk.
 
 ## Directory Size
 
 ```du -sh /var/log```
 
-1.1G    /var/log
+Output:
+
+```1.1G    /var/log```
 
 **Observation:**
+
 Log directory size is reasonable; not consuming excessive disk space.
 
 ## Network
 
 ``` ss -tulpn | grep cron```
-(no output)
 
-Expected result — cron does not listen on network ports.
+Output:
+
+```Expected result — cron does not listen on network ports.```
 
 ## Cron Service Logs
 
 ```journalctl -u cron -n 50 --no-pager```
 
-Jan 24 10:00:01 system CRON[1456]: (root) CMD (backup.sh)
+Output:
+
+```Jan 24 10:00:01 system CRON[1456]: (root) CMD (backup.sh)```
 
 **Observation:**
+
 Recent cron jobs executed successfully. No error messages in last 50 entries.
 
 ## System Log for Cron
