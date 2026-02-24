@@ -33,8 +33,7 @@ Output:
 
 ```-rw-r--r-- 1 root root 234 Jan 24 10:11 hosts-copy```
 
-**Observation: **
-Filesystem is writable. File operations succeed without permission or disk errors.
+**Observation:** Filesystem is writable. File operations succeed without permission or disk errors.
 
 ## Cron Spool Directory
 
@@ -44,8 +43,7 @@ Output:
 
 ```drwxr-xr-x 2 root root 4096 Jan 20 08:00 /var/spool/cron```
 
-**Observation:**
-Cron spool directory exists with correct ownership and permissions.
+**Observation:** Cron spool directory exists with correct ownership and permissions.
 
 ## CPU & Memory
 
@@ -56,9 +54,7 @@ Output:
  ``` PID %CPU %MEM COMMAND ```
 ``` 1023  0.0  0.1 cron```
  
-**Observation: **
-
-cron is running and consuming negligible CPU and memory — normal behavior.
+**Observation:** cron is running and consuming negligible CPU and memory — normal behavior.
 
 ## Memory Status
 
@@ -70,8 +66,7 @@ Output:
 ```Mem:           3.8G        1.2G        2.0G```
 ```Swap:          2.0G          0B        2.0G```
 
-**Observation:**
-No memory pressure. Sufficient free RAM and swap unused.
+**Observation:** No memory pressure. Sufficient free RAM and swap unused.
 
 ## Disk & IO
 
@@ -82,9 +77,7 @@ Disk Usage
 ```Filesystem      Size  Used Avail Use%```
 ```/dev/xvda1       20G   11G    8G  58%```
 
-**Observation:**
-
-Root partition at 58% utilization — healthy, no immediate disk space risk.
+**Observation:** Root partition at 58% utilization — healthy, no immediate disk space risk.
 
 ## Directory Size
 
@@ -94,9 +87,7 @@ Output:
 
 ```1.1G    /var/log```
 
-**Observation:**
-
-Log directory size is reasonable; not consuming excessive disk space.
+**Observation:** Log directory size is reasonable; not consuming excessive disk space.
 
 ## Network
 
@@ -114,9 +105,7 @@ Output:
 
 ```Jan 24 10:00:01 system CRON[1456]: (root) CMD (backup.sh)```
 
-**Observation:**
-
-Recent cron jobs executed successfully. No error messages in last 50 entries.
+**Observation:** Recent cron jobs executed successfully. No error messages in last 50 entries.
 
 ## System Log for Cron
 ```tail -n 50 /var/log/syslog | grep CRON```
@@ -125,6 +114,4 @@ Output:
 
 ```CRON[1456]: (root) CMD (backup.sh)```
 
-**Observation:**
-
-Jobs are running at scheduled intervals. No failed or missed executions observed.
+**Observation:** Jobs are running at scheduled intervals. No failed or missed executions observed.
