@@ -28,6 +28,9 @@ Create Throwaway Directory & File
 ```mkdir -p /tmp/runbook-demo```
 ```cp /etc/hosts /tmp/runbook-demo/hosts-copy```
 ```ls -l /tmp/runbook-demo```
+
+Output:
+
 ```-rw-r--r-- 1 root root 234 Jan 24 10:11 hosts-copy```
 
 **Observation: **
@@ -47,6 +50,7 @@ Cron spool directory exists with correct ownership and permissions.
 ## CPU & Memory
 
 ```ps -o pid,pcpu,pmem,comm -C cron```
+
 Output:
 
  ``` PID %CPU %MEM COMMAND ```
@@ -57,6 +61,7 @@ Output:
 cron is running and consuming negligible CPU and memory — normal behavior.
 
 ## Memory Status
+
 ``` free -h```
 
 Output:
