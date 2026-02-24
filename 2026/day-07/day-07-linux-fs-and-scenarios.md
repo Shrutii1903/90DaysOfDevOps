@@ -1,5 +1,5 @@
 # Linux Filesystem Hierarchy – Detailed Guide
-/ → Root Directory
+```/ → Root Directory```
 
 What it is: The top-level directory of the Linux filesystem. Everything starts here.
 
@@ -141,4 +141,3 @@ initrd.img → initial RAM disk
 
 grub/ → bootloader files
 
-🔑 Quick Tips
