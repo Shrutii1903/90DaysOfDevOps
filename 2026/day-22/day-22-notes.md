@@ -74,7 +74,8 @@ The place where committed changes are permanently stored in Git history.
 
 ### Git Workflow
 
-Working Directory → Staging Area → Repository
+Working Directory → Staging Area → Repository 
+thanks
 
 Example:
 
